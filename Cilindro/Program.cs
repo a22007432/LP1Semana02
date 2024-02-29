@@ -6,7 +6,16 @@ namespace Cilindro
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.Write("Please insert the height of a cylinder (r n):");
+            float h = float.Parse(Console.ReadLine());
+
+            Console.Write("Please insert the radius of a cylinder (r n):");
+            float rad = float.Parse(Console.ReadLine());
+
+            
+
+
+            
         }
     }
 }

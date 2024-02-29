@@ -17,7 +17,10 @@ namespace Cilindro
 
             Console.WriteLine($"Volume: {v}");
 
-            float perimeter = 2*pi*rad;
+            float s = 2*pi*rad*(rad+h);
+            Console.WriteLine($"Surface Area: {s}");
+
+
 
             
             

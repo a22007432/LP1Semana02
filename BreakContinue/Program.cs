@@ -23,7 +23,7 @@ namespace BreakContinue
                 {
                     continue;
                 }
-                else (turn == 10)
+                if (turn == 10)
                 {
                     continue;
                 }

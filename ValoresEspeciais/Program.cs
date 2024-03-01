@@ -54,6 +54,13 @@ namespace ValoresEspeciais
 
             uint overi = uint.MaxValue;
             Console.WriteLine(( uint) ( overi + 1));
+
+            float overf1 = float.MaxValue * 2;
+            Console.WriteLine(overf1);
+
+            float overf2 = float.MaxValue + 1;
+            Console.WriteLine(overf2);
+            
             
 
 

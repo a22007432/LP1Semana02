@@ -6,9 +6,11 @@ namespace MasterAndPlayer
     {
         static void Main(string[] args)
         {
-            int answer = 0;
+            int answer,n ;
             bool correct = false;
             bool validn = false;
+            int cases;
+            int lim = 0;
 
 
             
@@ -18,7 +20,7 @@ namespace MasterAndPlayer
 
 
                 Console.WriteLine("Number Master insert number: ");
-                int n = int.Parse(Console.ReadLine());
+                n = int.Parse(Console.ReadLine());
                 if (n < 0 || n > 100)
                 {
                     Console.WriteLine("invalid number try again");
@@ -27,28 +29,43 @@ namespace MasterAndPlayer
                 else
                 {
                     validn = true;
+                    while (lim<100)
+                    {
+                        Console.WriteLine("");
+                        ++lim;
+                    }
                 }
+
             }while(validn == false);
 
-
-            
-
-            /*if (n < 0 || n > 100)
-            {
-                Console.WriteLine("invalid number get out");
-            }
-            else
-            {
                 
-                do
+            do
+            {
+                Console.WriteLine("Player insert number: ");
+                answer = int.Parse(Console.ReadLine());
+                if (answer < 0 ||  answer > 100)
                 {
-                    if(correct == false)
-                    {
-                        
-                    }
+                    Console.WriteLine("invalid number try again");
 
-                } while(correct == false);
-            }*/
+                }
+
+                if(answer>n)
+                {
+                    Console.WriteLine($"The correct num is smaller than {answer}");
+                }
+                if(answer<n)
+                {
+                    Console.WriteLine($"The correct num is larger than {answer}");
+                }
+                else
+                {
+                    correct = true;
+                }
+                
+
+
+            } while(correct == false);
+            Console.WriteLine($"Player wins!");
         }
     }
 }

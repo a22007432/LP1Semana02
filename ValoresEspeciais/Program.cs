@@ -35,6 +35,23 @@ namespace ValoresEspeciais
 
             Console.WriteLine(f);
             Console.WriteLine(f_s);
+
+            double x = double.PositiveInfinity;
+            double y = double.NegativeInfinity;
+            double z = double.PositiveInfinity / double.NegativeInfinity;
+
+            Console.WriteLine(x);
+            Console.WriteLine(y);
+            Console.WriteLine(z);
+
+            float xf = float.PositiveInfinity;
+            float yf = float.NegativeInfinity;
+            float zf = float.NaN;
+
+            Console.WriteLine(xf);
+            Console.WriteLine(yf);
+            Console.WriteLine(zf);
+
         }
     }
 }

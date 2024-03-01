@@ -52,6 +52,12 @@ namespace ValoresEspeciais
             Console.WriteLine(yf);
             Console.WriteLine(zf);
 
+            uint overi = uint.MaxValue;
+            Console.WriteLine(( uint) ( overi + 1));
+            
+
+
+
         }
     }
 }

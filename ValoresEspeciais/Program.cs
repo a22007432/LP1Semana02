@@ -61,6 +61,10 @@ namespace ValoresEspeciais
             float overf2 = float.MaxValue + 1;
             Console.WriteLine(overf2);
             
+            float underf1;
+            float underf2;
+            underf1 = underf2 = 192134.0f;
+            Console.WriteLine(underf1 == underf2 + 0.0001f); 
             
 
 
